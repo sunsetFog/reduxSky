@@ -1,0 +1,24 @@
+.themeComponent.ant-checkbox-group .ant-checkbox-group-item {
+  margin-bottom: 20px;
+
+  [data-theme='dark'] & {
+    color: $dark-text-color;
+  }
+
+  .ant-checkbox {
+    .ant-checkbox-inner {
+      [data-theme='dark'] & {
+        border-color: $dark-text-color !important;
+        background-color: transparent;
+
+        &::after {
+          border-color: $highLight-color;
+        }
+      }
+    }
+
+    &.ant-checkbox-checked::after {
+      content: none;
+    }
+  }
+}

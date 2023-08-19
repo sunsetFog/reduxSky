@@ -1,0 +1,69 @@
+.themeComponent.ant-tabs {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  box-shadow: 0 0 15px 0 rgba(15, 33, 48, 0.06);
+
+  [data-theme='dark'] & {
+    background-color: $dark-odd-color;
+    color: $dark-primary-color;
+  }
+
+  [data-theme='light'] & {
+    background-color: $primary-color;
+  }
+
+  .ant-tabs-nav::before {
+    content: none;
+  }
+
+  .ant-tabs-ink-bar {
+    [data-theme='dark'] & {
+      background-color: $dark-highLight-color;
+    }
+
+    [data-theme='light'] & {
+      background-color: $highLight-color;
+    }
+  }
+
+  .ant-tabs-tab {
+    font-size: 18px;
+    margin: 0 32px;
+
+    [data-theme='dark'] & {
+      color: $dark-text-color;
+    }
+
+    [data-theme='light'] & {
+      color: $text-color;
+    }
+
+    &.ant-tabs-tab-active {
+      color: $dark-highLight-color;
+
+      .ant-tabs-tab-btn {
+        color: $dark-highLight-color;
+      }
+    }
+  }
+
+  .ant-tabs-bar {
+    margin: 0 !important;
+    border-bottom: none !important;
+
+    .ant-tabs-nav-container {
+      font-size: 18px !important;
+    }
+  }
+
+  .ant-tabs-content {
+    [data-theme='dark'] & {
+      background-color: transparent;
+    }
+
+    [data-theme='light'] & {
+      background-color: $primary-color;
+    }
+  }
+}

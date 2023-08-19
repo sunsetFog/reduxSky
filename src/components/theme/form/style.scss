@@ -1,0 +1,18 @@
+.themeComponent.ant-form.ant-form-horizontal,
+.themeComponent.ant-form.ant-form-vertical {
+  .ant-form-item {
+    .ant-form-item-label {
+      text-align: left;
+
+      label {
+        height: 44px;
+        line-height: 44px;
+        font-size: 18px;
+
+        [data-theme='dark'] & {
+          color: $dark-text-color;
+        }
+      }
+    }
+  }
+}

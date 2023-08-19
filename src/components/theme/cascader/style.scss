@@ -1,0 +1,42 @@
+.themeComponent.ant-cascader-picker {
+  text-align: center;
+  height: 44px;
+  font-size: 18px !important;
+  border-radius: 5px !important;
+  border: 1px solid;
+
+  &:focus .ant-cascader-input {
+    box-shadow: none;
+  }
+
+  [data-theme='light'] & {
+    border-color: #d9d9d9;
+  }
+
+  [data-theme='dark'] & {
+    background-color: $dark-primary-color;
+    color: $dark-highLight-color;
+    border-color: $dark-highLight-color;
+
+    .anticon {
+      background-color: $dark-primary-color;
+      color: $dark-text-color;
+    }
+  }
+}
+
+.ant-cascader-menus.themeComponent {
+  [data-theme='dark'] & {
+    background-color: $dark-pop-color;
+    color: $dark-text-color;
+
+    .ant-cascader-menu-item-active,
+    .ant-cascader-menu-item:hover {
+      background-color: $dark-highLight-color;
+    }
+
+    .ant-cascader-menu-item-expand-icon {
+      color: $dark-text-color;
+    }
+  }
+}

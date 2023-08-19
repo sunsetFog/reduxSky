@@ -1,0 +1,54 @@
+.themeComponent.ant-btn {
+  height: 44px;
+  font-size: 18px !important;
+  border-radius: 5px !important;
+
+  &:not(.ant-btn-dangerous) {
+    &.ant-btn-primary {
+      [data-theme='dark'] & {
+        background-color: $dark-button-color !important;
+        border-color: $dark-button-color;
+        color: white !important;
+      }
+
+      [data-theme='light'] & {
+        background-color: $button-color !important;
+        border-color: $button-color;
+        color: white !important;
+      }
+    }
+
+    &.ant-btn-default {
+      [data-theme='dark'] & {
+        border-color: $dark-button-color;
+        color: $dark-button-color;
+        background-color: transparent;
+      }
+
+      [data-theme='light'] & {
+        border-color: $button-color;
+        color: $button-color;
+      }
+    }
+
+    &.ant-btn[disabled] {
+      [data-theme='light'] & {
+        font-size: 18px;
+        color: #a7afb1 !important;
+        background: #efefef !important;
+        border: none;
+      }
+
+      [data-theme='dark'] & {
+        font-size: 18px;
+        color: rgba(256, 256, 256, 0.36) !important;
+        background: #3f4552 !important;
+        border: none;
+      }
+    }
+  }
+
+  &.ant-btn-link {
+    color: $dark-button-color;
+  }
+}

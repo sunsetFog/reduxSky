@@ -1,0 +1,33 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+# webstorm configuration data
+.idea*
+
+# macos DS Store
+.DS_Store
+
+# build output
+dist
+zip
+
+# npm/yarn
+node_modules
+npm-debug.log
+package.lock.json
+.pnp*
+
+# log file
+*.log
+
+# for custom build
+*.custom.js
+# 分布式路由配置引用脚本，由编译脚本自动生成
+src/**/views.require.context.js
+# for sonnar scanner and sornar lint
+.scannerwork
+.sonarlint
+
+# for patch files
+*.patch
+# ts compiled
+tsconfig.tsbuildinfo

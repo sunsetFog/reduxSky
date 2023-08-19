@@ -1,0 +1,23 @@
+html,
+body {
+  height: 100%;
+}
+
+#app-container {
+  height: inherit;
+
+  & > .ant-design-pro {
+    @media screen and (max-width: 600px) {
+      height: inherit;
+      min-width: auto;
+    }
+    min-width: 1903px;
+    overflow-x: auto;
+    // height: inherit;
+
+    > section > aside {
+      // 隐藏aside火狐滚动条
+      scrollbar-width: none;
+    }
+  }
+}

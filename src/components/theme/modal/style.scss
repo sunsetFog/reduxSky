@@ -1,0 +1,119 @@
+.ant-modal-wrap.themeComponent,
+.ant-modal.themeComponent {
+  .ant-modal-content {
+    [data-theme='dark'] & {
+      background-color: $dark-pop-color;
+    }
+
+    .ant-modal-close {
+      [data-theme='dark'] & {
+        color: $dark-text-color;
+      }
+    }
+
+    .ant-modal-header {
+      text-align: center;
+      border-bottom: none;
+      padding: 16px 44px;
+
+      [data-theme='dark'] & {
+        background-color: $dark-pop-color;
+      }
+
+      .ant-modal-title {
+        font-size: 24px;
+        border-bottom: 2px solid;
+        height: 44px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
+        [data-theme='dark'] & {
+          color: $dark-text-color;
+          border-color: $dark-border-color;
+        }
+
+        [data-theme='light'] & {
+          border-color: $border-color;
+        }
+      }
+    }
+
+    .ant-modal-footer {
+      border: none;
+      text-align: center;
+      padding-bottom: 40px;
+
+      .ant-btn {
+        font-size: 18px;
+        border-radius: 5px;
+        border-color: $dark-button-color;
+        color: $dark-button-color;
+        background-color: transparent;
+        height: 44px;
+        min-width: 120px;
+
+        &.ant-btn-primary {
+          background-color: $dark-button-color;
+          color: white;
+        }
+      }
+
+      button + button {
+        margin-left: 20px;
+      }
+    }
+
+    .ant-modal-body {
+      .ant-form.ant-form-horizontal {
+        .ant-form-item {
+          .ant-form-item-label {
+            text-align: left;
+
+            label {
+              height: 44px;
+              line-height: 44px;
+              font-size: 18px;
+
+              [data-theme='dark'] & {
+                color: $dark-text-color;
+              }
+            }
+          }
+        }
+      }
+
+      .ant-modal-confirm-body-wrapper {
+        [data-theme='dark'] & {
+          .ant-modal-confirm-body > * {
+            color: $dark-text-color;
+          }
+
+          .ant-btn {
+            background-color: transparent;
+            border-color: $dark-button-color;
+            color: $dark-button-color;
+          }
+
+          .ant-modal-confirm-btns .ant-btn {
+            &.ant-btn-primary {
+              background-color: $dark-button-color !important;
+              border-color: $dark-button-color;
+              color: white !important;
+            }
+
+            &.ant-btn-default {
+              border-color: $dark-button-color;
+              color: $dark-button-color;
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ant-modal-wrap.themeComponent .ant-modal-content .ant-modal-body {
+  padding: 10px 44px;
+}

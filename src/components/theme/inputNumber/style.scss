@@ -1,0 +1,33 @@
+.ant-input-number.themeComponent {
+  height: 44px;
+  font-size: 18px !important;
+  border-radius: 5px !important;
+
+  [data-theme='dark'] & {
+    background-color: $dark-primary-color;
+    color: $dark-highLight-color;
+    border: 1px solid $dark-highLight-color;
+  }
+
+  .ant-input-number-input {
+    height: 44px;
+  }
+
+  .ant-input-number-handler-wrap {
+    background-color: transparent;
+    border-color: $dark-highLight-color;
+
+    .ant-input-number-handler-down {
+      border-color: $dark-highLight-color;
+    }
+
+    .ant-input-number-handler-up-inner,
+    .ant-input-number-handler-down-inner {
+      color: $dark-text-color;
+    }
+
+    .ant-input-number-handler:active {
+      background-color: $dark-highLight-color;
+    }
+  }
+}

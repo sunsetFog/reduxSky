@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+dist
+# A bug for stylelint which checks images
+*.jp*g
+*.js
+*.jsx
+*.ts
+*.tsx
+*.mjs

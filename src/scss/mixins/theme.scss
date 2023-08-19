@@ -1,0 +1,13 @@
+// 默认主题
+@mixin theme-light() {
+  :global([data-theme='light']) & {
+    @content;
+  }
+}
+
+// 黑夜主题
+@mixin theme-dark() {
+  :global([data-theme='dark']) & {
+    @content;
+  }
+}

@@ -1,0 +1,81 @@
+@mixin office-overflow() {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+// 纯字母不换行
+@mixin office-text-wrap() {
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+// 纯字母换行
+@mixin office-text-break() {
+  word-break: break-all;
+}
+
+// single ellipsis
+@mixin office-single-ellipsis {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// more ellipsis
+@mixin office-more-ellipsis($line: 3) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+  overflow: hidden;
+  // 硬件加速, 处理部分浏览器兼容显示
+  transform: translate3d(0, 0, 0);
+}
+
+// 清除浮动影响
+@mixin office-clear-after() {
+  &::after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+// 清除margin越界
+@mixin office-clear-before() {
+  &::before {
+    content: '';
+    display: table;
+  }
+}
+
+// placeholder color
+@mixin office-placeholder-color($color: #afafb2) {
+  /* WebKit browsers */
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+
+  /* Mozilla Firefox 19+ */
+  &::-moz-placeholder {
+    color: $color;
+  }
+
+  /* Mozilla Firefox 4 to 18 */
+  &:-moz-placeholder {
+    color: $color;
+  }
+
+  /* Internet Explorer 10+ */
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+}
+
+// border test
+@mixin office-test($color: red) {
+  border: 1px solid $color;
+}

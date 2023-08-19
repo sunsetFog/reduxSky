@@ -1,0 +1,57 @@
+/* 顶部容器样式
+ */
+@mixin office-page-container() {
+  @include theme-light() {
+    background-color: #f1f4f5;
+  }
+
+  @include theme-dark() {
+    background-color: #000;
+  }
+}
+
+@mixin office-button($radius: 0.08rem) {
+  background-image: linear-gradient(90deg, #6ab5f9 0%, #4567d0 100%);
+  border-radius: $radius;
+  cursor: pointer;
+}
+
+@mixin area-container() {
+  padding: 20px 30px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 15px 0 rgba(15, 33, 48, 0.06);
+  @media screen and (max-width: 600px) {
+    padding: 10px 10px;
+    margin: 5px auto;
+  }
+  @include theme-light() {
+    background-color: $primary-color;
+  }
+
+  @include theme-dark() {
+    background-color: $dark-primary-color;
+  }
+}
+
+@mixin scrollBar() {
+  &::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgba(213, 213, 213, 0.8);
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: rgba(213, 213, 213, 0.8);
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #969696;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar:horizontal {
+    height: 8px;
+    background-color: rgba(213, 213, 213, 0.8);
+  }
+}

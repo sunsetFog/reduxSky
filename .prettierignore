@@ -1,0 +1,23 @@
+# Ignore resource:
+
+# dist文件
+dist/**
+
+# webpack根index
+src/views/tpl.ejs
+
+# vscode
+.vscode/**
+
+# idea
+*.iml
+.idea/**
+
+# lock 文件
+package-lock.json
+yarn.lock
+
+*.md
+
+# 根scss
+src/views/container/style.scss

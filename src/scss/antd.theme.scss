@@ -1,0 +1,147 @@
+// antd组件全局样式维护
+:global(.ant-message span .ant-message-notice .ant-message-notice-content) {
+  max-width: 435px;
+  height: auto;
+  background-image: linear-gradient(180deg, rgba(255, 238, 233, 0.4) 94%, #f7fafc 100%),
+    linear-gradient(180deg, rgba(250, 243, 241, 0) 0%, #f0e9e7 100%);
+  box-shadow: 0 4px 5px 0 rgba(155, 128, 128, 0.24), inset 0 -1px 0 0 #f9f2f0;
+  border-radius: 9.6px;
+  border-bottom: 2px solid #dbceca;
+  box-sizing: border-box;
+  padding: 19px 16px 17px;
+
+  .ant-message-custom-content {
+    display: flex;
+
+    .anticon {
+      margin-right: 5px;
+
+      svg {
+        color: #fe8570;
+        font-size: 18px;
+      }
+    }
+  }
+}
+// modal
+.ant-modal-footer {
+  border: none;
+  padding-bottom: 30px;
+}
+// select
+.ant-select-selection__rendered {
+  text-align: center;
+
+  .ant-select-selection-selected-value {
+    float: none;
+    display: inline !important;
+  }
+}
+
+.ant-select-selection__placeholder {
+  text-align: center;
+}
+
+.ant-select-dropdown-menu-item {
+  text-align: center;
+}
+
+[data-theme='dark'] {
+  body {
+    color: $dark-primary-color;
+  }
+
+  // 分页
+
+  // modal
+  .ant-modal {
+    color: $dark-primary-color;
+  }
+
+  .ant-modal-content {
+    background-color: $dark-pop-color;
+
+    .ant-modal-header {
+      background-color: $dark-pop-color;
+
+      .ant-modal-title {
+        color: $dark-primary-color;
+      }
+    }
+
+    .ant-modal-close-x svg {
+      fill: $dark-primary-color;
+    }
+
+    .ant-btn {
+      background-color: transparent;
+      color: $dark-button-color;
+      border-color: $dark-button-color;
+    }
+  }
+
+  // checkbox
+  .ant-checkbox-wrapper {
+    color: $dark-primary-color;
+  }
+  // select
+  .ant-select-selection {
+    background-color: transparent;
+    color: $dark-highLight-color;
+    border-color: $dark-highLight-color;
+
+    .ant-select-arrow svg {
+      fill: $dark-highLight-color;
+    }
+
+    .ant-select-selection__clear {
+      background-color: transparent;
+
+      & svg {
+        fill: $dark-highLight-color;
+      }
+    }
+  }
+
+  .ant-select-dropdown {
+    background-color: $dark-pop-color;
+
+    .ant-select-dropdown-menu-item {
+      color: $dark-primary-color;
+
+      &:hover:not(.ant-select-dropdown-menu-item-disabled) {
+        background-color: $dark-highLight-color;
+      }
+    }
+
+    .ant-select-dropdown-menu-item-active:not(.ant-select-dropdown-menu-item-disabled) {
+      background-color: $dark-highLight-color;
+    }
+
+    .ant-select-dropdown-menu-item-selected {
+      background-color: $dark-highLight-color;
+    }
+  }
+  // form
+  .ant-form-item {
+    color: $dark-primary-color;
+
+    .ant-form-item-label > label {
+      color: $dark-primary-color;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body,
+  html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    touch-action: none;
+    min-height: 100%;
+    overflow: hidden;
+  }
+}

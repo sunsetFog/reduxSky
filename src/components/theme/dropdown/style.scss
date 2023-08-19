@@ -1,0 +1,17 @@
+.themeComponent.ant-dropdown {
+  [data-theme='dark'] & {
+    .ant-dropdown-arrow {
+      border-top-color: $dark-pop-color;
+      border-left-color: $dark-pop-color;
+    }
+
+    .ant-dropdown-menu {
+      background-color: $dark-pop-color;
+    }
+
+    .ant-dropdown-menu-item:hover,
+    .ant-dropdown-menu-submenu-title:hover {
+      background-color: $dark-highLight-color;
+    }
+  }
+}
